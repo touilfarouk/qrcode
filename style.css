@@ -178,7 +178,7 @@ button {
     }
 
     #logo {
-        background-image: url('./qrcode.png');
+        background-image: url('./test.png');
         background-size: cover;
         background-position: center;
         width: 22%; /* Adjust based on your design */
