@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>qrcode</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="qr-container">
+        <div id="logo"></div>
+        <div class="container-card">
+          <!-- Text "qrcode" is centered inside #logo -->
+        </div>
+        <div id="qrcode"></div>
+        <form>
+          <label for="qr-data"
+            >Entrez votre texte ci-dessous (max 260 caractères)</label
+          >
+          <textarea type="text" id="qr-data" maxlength="260" required>
+          </textarea>
+          <button type="submit" id="generate-button">
+            <i class="fa fa-gear"></i> GÉNÉRER
+          </button>
+        </form>
+        <button id="download-button">
+          <i class="fa fa-download"></i> TÉLÉCHARGER
+        </button>
+      </div>
+    </div>
+
+    <script src="qrcode.js"></script>
+    <script src="app.js"></script>
+    <footer class="footer">
+      © 2024 Développé par le département DGL qrcode
+    </footer>
+  </body>
+</html>
